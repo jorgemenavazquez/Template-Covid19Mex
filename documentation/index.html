@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>World Times-2.0.0 - User Documentation</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+				type="text/css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/hl-styles/atom-one-dark.css">
+</head>
+<body>
+<nav>
+	<div class="container">
+		<h1>GBJ Solution</h1>
+		<div id="menu">
+			<ul class="toplinks">
+				<li><a href="http://tona.gbjsolution.com/">Theme Demo</a></li>
+				<li><a href="http://themeforest.net/user/GBJsolution/portfolio/?ref=gbjsolution">Themeforest portfolio</a></li>
+				<li><a href="http://graphicriver.net/user/GBJsolution/portfolio/?ref=gbjsolution">Graphicriver Portfolio</a></li>
+			</ul>
+		</div>
+		<a id="menu-toggle" href="#" class=" ">&#9776;</a> </div>
+</nav>
+<header>
+	<div class="container">
+        <h2 class="docs-header">World Times-2.0.0 - User Documentation</h2>
+    </div>
+</header>
+<section class="thanks">
+	<div class="container">
+		<h3>Thank you vey Much!</h3>
+			<p>
+				Thank you very much for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to send email via my user page contact form <a href="http://themeforest.net/user/gbjsolution/?ref=gbjsolution">here.</a> Thanks so much!
+			</p>
+		<h3>Please Rate this theme.</h3>
+		<p>
+			If you like this theme then consider to rate it. If you are going to to rate this below then please consider to tell me the reason before rating it. I will do my best to help you.
+			you can send me a message <a href="http://themeforest.net/user/gbjsolution/?ref=gbjsolution">here.</a> To rate this item go <a href="http://themeforest.net/downloads">here</a>.
+		</p>
+	</div>
+	<hr>
+</section>
+<section>
+	<div class="container">
+		<!-- sidebar menue start -->
+		<ul class="docs-nav" id="menu-left">
+			<li><strong>Getting Started</strong></li>
+            <li><a href="#before_start">Before You Start</a></li>
+            <li><a href="#api_key">API key for search function</a></li>
+			<li><a href="#disqus_comment">Disqus comment</a></li>
+            <li><a href="#home_page_configuration">Home Page Configuration</a></li>
+            <li><a href="#footer-widgets">Footer Widgets</a></li>
+            <li><a href="#social_links">Social Links</a></li>
+            <li><a href="#widget_navigation">Navigation Widget</a></li>
+            <li><a href="#custom_links_in_footer">Custom links In Footer</a></li>
+            <li><a href="#members">Members</a></li>
+			<li><a href="#installation">Installation</a></li>
+            <li><a href="#navigation">Navigation Links</a></li>
+            <li><a href="#featured_image">Featured Image</a></li>
+            <li><a href="#theme_translation">Theme Translation</a></li>
+			<li class="separator"></li>
+			<li><strong>Development</strong></li>
+			<li><a href="#theme_customization">Theme Customization</a></li>
+			<li><a href="#change_color">How to Change Color</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+			<li class="separator"></li>
+			<li><strong>Sources and Credits</strong></li>
+			<li><a href="#font">Font</a></li>
+			<li><a href="#scripts">Scripts</a></li>
+			<li><a href="#images">Images</a></li>
+		</ul>
+		<!-- sidebar menu end -->
+		<div class="docs-content">
+			<h2>Getting Started</h2>
+			<h3 id="before_start">Before you start</h3>
+			<p>This documentation is intended to help you properly install and configure the theme on your ghost blog. <strong>Make sure to keep a backup before any modification</strong>.
+			</p>
+			<p>If you are new to Ghost then some links may be useful to know about ghost itself:</p>
+			<ul>
+				<li>Ghost Official documentation: <a href="http://docs.ghost.org/">http://docs.ghost.org/</a></li>
+        		<li>Ghost Help and support center: <a href="https://forum.ghost.org/">https://forum.ghost.org/</a></li>
+			</ul>
+			<h2>Configuration &amp; Installation</h2>
+            <p>To use the theme extract the main downloaded zip file and first of all make a backup of the theme main folder. <strong>theme backup is recommended because you can always get back to the fresh copy.</strong></p>
+            <p>After extracting you will find a folder named similar to theme name. This file is the production ready ( live site ready ) theme. After the required setup you will make a zip of this folder's content ( all files and folders within this folder ) and upload it to your ghost site.</p>
+            <p>Please read through the documentation. For heavy customization or to change color or other CSS, see "<strong>Development</strong>" section below in this documentation.</p>
+            <h3 id="api_key">API key for search function</h3>
+            <p>After release foGhost API version 2, we have to generate an API key and set that key in our theme. Without this the search functionality will not work. Please follow the steps belew.</p>
+            <ul>
+                <li>Go to your admin dashboard and visit "Integrations" setting page.</li>
+                <li>Scroll Below and click on the "Add custom integration" button.</li>
+                <li>Give it a name ( anything you want, it does not matter). You can just name it "search"</li>
+                <li>Save that and copy the "Content API key.</li>
+                <li>Now open "<strong>api_key.hbs</strong>" file which is located in partials folder.</li>
+                <li>Remove everything in that file and paste the API key you have copied from your admin dashboard. Save the file.</li>
+            </ul>
+            <img src="assets/images/searchAPI.gif"/>
+			<h3 id="disqus_comment">Configure disqus comment</h3>
+            <p>To enable disqus you need <code>disqus_shotrname</code> for your site. To setup the disqus comment properly please follow the steps below.</p>
+            <ul>
+                <li>Go to disqus.com and sign up.</li>
+                <li>After log in go to admin dashboard.</li>
+                <li>Then follow the instruction and add your website there.</li>
+                <li>At the time of adding your site you will get a dishqus shortname, copy that.</li>
+                <li>Now open "disqus-comment.hbs" file which is located in partials folder. At line number 7 you will see below code</li>
+                <pre><code>
+                        var disqus_shortname = 'example';
+                    </code>
+                </pre>
+                <li>replace that example with your own shortcode. It will look like below.</li>
+                <pre>
+                    <code>var disqus_shortname = 'yourDisqusShortnameHere';</code>
+                </pre>
+                <li>Now save the file.</li>
+            </ul>
+            <h3 id="home_page_configuration">Home page Configuration</h3>
+            <p>
+                In this theme The home page has custom layout. It shows featured posts, latest posts and there are 6 section to show post by tag / category. Which means you have to specify different tag for each section. 
+                <br/>
+                If you feature some post those posts will be shown in featured posts section ordered by published date.
+                <br/>
+                At first let's see section numbering.
+            </p>
+            <img src="assets/images/home-page.jpg"/>
+            <p>Now you have to set tag for each <strong>Tag section</strong> one by one. Please follow the steps below.</p>
+            <ul>
+                <li>Open "tag-section-1.hbs" file which is located in "partials > homepage" folder within the theme.</li>
+                <li>At line number 1 in that file, you will see this code</li>
+                <pre><code>{{#get "posts" limit="4" filter="tag:business"}}</code></pre>
+                <li>In that line change <code>business</code> with your own chosen tag slug.
+                <br/>Go to tag page in your admin area and select a tag there. you will see information related to that selected tag at the right side of that page. See the image below to know which is tag name and which is tah slug.</li>
+                <img src="assets/images/tag-name-and-slug.jpg"/>
+                <li>Now you also have to add the tag name in that page to show as the heading  of that section.</li>
+                <li>in the same file at line number 5 you will see following code.</li>
+                <pre><code>&lt;span&gt;Business&lt;/span&gt;</code></pre>
+                <li>Replace <code>Business</code> In that line with the Tag name you have chosen. This will be shown as the heading of that section.</li>
+                <li>That is it. You have successfully setup the tag section 1 area with your own chosen tag.</li>
+                <li>Now repeat the above steps for each "tag-section" file in "partials > homepage" folder with different tags slug and name.</li>
+            </ul>
+            
+            <h3 id="footer-widgets">Footer Widgets</h3>
+      </p>Please Follow the steps below.</p>
+      <ul>
+        <li>Open <code>footer.hbs</code> file, located in partials folder, and then reorder the partials call.</li>
+        <li>To hide or remove any widget in footer just comment out that specific widget.</li>
+        <li>Then save the file</li>
+      </ul>
+      <p>Widget area in <code>footer.hbs</code> will look like this..</p>
+      <pre>
+        <code>
+            &lt;div class="col-md-3"&gt;
+                {{&gt; widget-about}}
+            &lt;/div&gt;
+            &lt;div class="col-md-5"&gt;
+                {{&gt; widget-tags}}
+                {{&gt; widget-navigation}}
+            &lt;/div&gt;
+            &lt;div class="col-md-4"&gt;
+                {{&gt; widget-subscribe}}
+                {{&gt; widget-social}}
+            &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>About Widget in footer</h3>
+      <p>In partials folder you will find a file named "widget-about.hbs". Open that file and replace the demo text with your own text.</p>
+      <h3 id="social_links">Adding social links</h3>
+			<p>To add the actual social links to the icons in <strong>Follow Us</strong> widget, please follow the steps below.</p>
+			<ul>
+				<li>open <code>widget-social.hbs</code> file located in <strong>partials</strong> folder.</li>
+				<li>Now replace the <code>#</code> for each <code>href</code> value with your own profile links.</li>
+			</ul>
+			<p>The <code>widget-social.hbs</code> file will look like below.</p>
+			<pre>
+            <code>
+            &lt;ul class="social-links"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/twitter}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/facebook}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/instagram}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/dribbble}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/behance}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/medium}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/pinterest}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/youtube}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/google-plus}}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;{{&gt; icons/linkedin}}&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            </code> 
+            </pre>
+            <h3 id="widget_navigation">Navigation Widget</h3>
+            <p>You don't have to edit this widget, it automatically shows same navigation links as header.</p>
+            <h3 id="custom_links_in_footer">Custom links in footer</h3>
+            <p>In footer, beside copyright text you will find some page links. Normally we may have some pages in our site which links we don't want to add at our main menu at top of the site, or we may want to link some external pages. Such as "Terms", "Privacy" erc.</p>
+            <p>We can use this links area to add those links.</p>
+            <p>If you open "custom-links.hbs" file which is located in partials folder you will see some links. like below example.</p>
+            <pre><code>&lt;a href="{{@blog_url}}/privacy/"&gt;Privacy&lt;/a&gt;</code></pre>
+            <p>In the above code {{@blog_url}} is used for your website's base url. like yoursite.com.</p>
+            <p>/privacy/ is the post url ie. post slug which you can found at the time of editing post or page at ghost admin.</p>
+            <p>To add a new link just copy one line there and then change the post url part and also the text part which will be visible as link text to visitor.</p>
+            <h3 id="members">Members</h3>
+            <p>Ghost introduced Members feature in Ghost version 3.0.0. This members feature is fully supported by this theme.</p>
+            <p>You can enable this member feature from the lab page in your ghost dashboard. Before Uploading the theme to your site you have to edit the text ( key points ) in your free, monthly and yearly pricing plan. Please follow the steps below to edit the key point you want to show in your pricing table.</p>
+            <img src="assets/images/pricing-table.png" alt="pricing table">
+            <p><strong>Please follow the steps below to edit the above mentioned key points in each pricing table.</strong></p>
+            <p>You will find following 3 files within the theme which are located in <strong>partials/members</strong> folder withinn the theme folder. These are three files for 3 different pricing plan.</p>
+            <ul>
+                <li>pricing-table-free.hbs</li>
+                <li>pricing-table-monthly.hbs</li>
+                <li>pricing-table-yearly.hbs</li>
+            </ul>
+            <p>Open First file start editing.</p>
+            <p>Starting from line number 10 in each file you will see those key points in each line one after one. See example as below.
+            <pre>
+                <code>&lt;li&gt;{{&gt; icons/check-mark}} Access to all free private posts&lt;/li&gt;
+&lt;li&gt;{{&gt; icons/check-mark}} Weekly updates with new content&lt;/li&gt;
+&lt;li&gt;{{&gt; icons/check-mark}} Support independent publishing&lt;/li&gt;
+&lt;li&gt;{{&gt; icons/check-mark}} No card details required&lt;/li&gt;</code>
+            </pre>
+        </p>
+            <p>Edit those sample text to add you own text. you can add as many line as you want.</p>
+            <p>When you are done with editing a file. Save that file and continue with the next file. Follow the same instruction to edit next file. Finish editing these files and you are ready to go to the next step.</p>
+			<h3 id="installation">Installation</h3>
+			<p>Ones the necessary configuration is done, make a zip of the modified theme folder.</p>
+            <p>Now login to your admin area and go to Design. In that page scroll down and you can find "Upload a theme" button. Upload the theme zip which you have created while ago. After finishing upload, activate the theme.</p>
+            <p>You also have to upload another file <strong>routes.yaml</strong> in your ghost site to work all the membership related page correctly.</p>
+			<p>Go to lab page in your dashboard, scroll down and you will see an option for routes. There is a button to upload routes YAML and a link below that button to download the routes.yaml which is being used currently. Download that file and and keep as a backup.</p>
+			<p>In the downloaded zip you will find a <strong>routes.yaml</strong> file which comes with this theme and specific for this theme.</p>
+			<p>Upload that file. Using "<strong>upload routes YAML</strong>" button.</p>
+			<img src="assets/images/routes-yaml.jpg" alt="routs yaml upload">
+			<p>Please note, if you are using self hosted Ghost then may be a you need to restart ghost to take effect the new routes file. If you are using Ghost (pro). then you don't need to do anything here.</p>
+			<p>If you want to install the demo data to make your site as the preview then you can go to <code>your-site-url/ghost/settings/labs/</code> and then import the <strong>world-times.ghost.demo.json</strong> file there. This file is located in <strong>demo data</strong> folder in main download folder.</p>
+			<h3 id="navigation">Navigation links</h3>
+			<p>To add links to you static page please follow the steps below.</p>
+			<ul>
+				<li>Post an article in your blog and Then select it as static page.</li>
+				<li>Copy the url for this post / page.</li>
+				<li>Go to Design page in your admin dashboard.</li>
+				<li>Add a label and the url and save it.</li>
+				<li>Now the theme will show newly added link in navigation.</li>
+			</ul>
+            
+            <h3 id="featured_image">Featured Image in post</h3>
+			<p>Ghost supports featured/cover image in post natively, and this theme handel that nicely. Recommended image size is, minimum 1200px wide.</p>
+			
+            <hr>
+            <h3 id="theme_translation">Theme Translation</h3>
+            <p>
+                Ghost introduced Theme translation and blog localization feature in version 1.20.0. We implemented translation support to this theme. Please follow the steps below to translate this theme in your language. Please follow the steps below to correctly translat the theme in your language.
+            </p>
+            <ul>
+                <li>Within theme folder, there is a folder named "locales". In that folder by default you will find a file named "en.json". This is the default file for english language and you have to use this file to create your own language file.</li>
+                <li>make a copy of en.json and give a name following this format [language_code].json ( example: for french <strong>fr.json</strong> for German i.e. Deutsch "<strong>de.json</strong> for Russian <strong>ru.json</strong> etc. )</li>
+                <li>If you are not sure about what is you language code then you can <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">visit this wiki page</a> and see. Use the two letter (ISO 639-1) code.</li>
+                <li>Now open the newly created &lt;your_language&gt;.json file in text editor. You will see "KEY": "VALUE" format in each line.</li>
+                <li>In english language KEY and VALUE are same. Now you read the left part of the : ie. KEY part and change the tight part ie. VALUE part to your own language.</li>
+                <li>After finishing the translation Save the file and upload the theme to your site.</li>
+                <li>Go to your admin area, Visit "Genera" setting page and change the "publication Language" option. By default there is "en" for english. Add your own language code there in place of "en" and save the settings.</li>
+                <li>Visit your site, If everything goes right, you will see all the theme related text in your site is in your translated language.</li>
+            </ul>
+            <strong>If you translate the theme in any language, then please consider to share ( feel free to send me via <a href="mailto:gbjsolution@gmail.com">email</a> ) that language file. I will add that file to the theme, so that it will available to other users.</strong>
+            <h2>Development</h2>
+            <h3 id="theme_customization">Theme Customization</h3>
+            <p>If you need to add only small css then you can add using Ghost's <a href="https://help.ghost.org/article/24-code-injection">Code Injection</a> feature. In "blog header" box you can add css like below examle. replace the css with your own css between the <code>&lt;style&gt;</code> tag.</p>
+            <pre>
+                <code>
+                    &lt;style&gt;
+                        .header-wrapper .text-logo {
+                            color: #076eff;
+                        }
+                    &lt;/style&gt;
+                </code>
+            </pre>
+            <h3>Detail customization prerequisite</h3>
+            <p>This theme is built using Gulp to compile javascript and CSS. CSS is written in SCSS. So if you want to modify the theme color, styles or appearance or anything you want to customize, before doing that you need to setup development environment setup.</p>
+            <p>Please follow all the steps below one by one to do it.</p>
+            <p>You need to have installed <strong>node js</strong> and <strong>gulp</strong> installed in your local machine.</p>
+            <ul>
+                <li>If you don't have nodejs installed in your machine then visit <a href="https://nodejs.org/">nodejs.org</a> and download and install latest LTS version of node js.</li>
+                <li>After installing node js open a command prompt or terminal. Then type <code>node -v</code>. If it shows a version number then node js is installed correctly. Also enter this command <code>npm -v</code> to see npm ( comes with node js) is installed properly.</li>
+                <li>After installing node js you need to install Gulp CLI globally in your machine. So in your terminal or command prompt enter this command. <code>npm install gulp-cli -g</code>. It may take some time, it will install Gulp CLI globally in your machine. Now you have done the environment setup.</li>
+                <li>At this point go to the development theme folder. In downloaded zip there is a folder named "development". Within that folder you will see a folder named as the theme name. Enter in that folder and run command prompt / terminal here. Or you can navigate to this folder within already running terminal.</li>
+                <li>Now enter command <code>npm install</code>. It may take some time. It will install all the development dependency within the project. It may show some warning, don't worry those are OK.</li>
+                <li>At this time you are ready to modify theme, Run one more command <code>gulp</code> in the terminal. It will initially compile all files and star to watch file changes. Keep the terminal open and start customizing the theme.</li>
+            </ul>
+            <h3 id="change_color">How to Change Color or CSS</h3>
+            <p>In the theme folder you will find "assets > scss" folder which contains all the theme styles written in SCSS.</p>
+            <p>To change any style / css you need to modify here. In SCSS folder you will find a folder named "components" which contains a bunch of .scss files which are part of the whole theme's style. and all those files are imported in a specific order in "screen.scss" file located in "scss" folder root outside of "components" folder. please dont edit that file.</p>
+			<p>To change the Theme color please follow the steps below.</p>
+			<ul>
+				<li>Open the <code>_color-and-font.scss</code> file in your code editor.</li>
+				<li>Now you have to change the color hexcode (#xxxxxx) in this file and save the file.</li>
+				<li>If you have followed the above section of instruction ( <strong>Detail customization prerequisite</strong>), and already running terminal with the gulp command then the file changes will be detected and if there is no error in your file then it will be automatically compiled.</li>
+			</ul>
+			<p>The <code>_color-and-font.scss</code> file looks like below.</p>
+			<pre>
+<code class="language-scss">/*=====================================================
+    Colors
+=====================================================*/
+/* different shades of gray used for text and other elements */
+$color-dark: #161616;
+$color-light: #AEAEAE;
+$color-normal: #565656;
+/* Other colors */
+$link-color: #275beb; /* used for links in post content */
+$border-color: #E0E0E0;
+$white: #ffffff;
+$black: #000000;
+$success: #60bd0c;
+$error: #e00543;
+
+/*=====================================================
+    Fonts
+=====================================================*/
+$sans-serif: 'Lato', sans-serif;
+$serif: 'PT Serif', serif;
+    
+    </code>
+            </pre>
+            
+            <p>After modifying the theme css when you are done and want to install the final theme in your live site, do the following.</p>
+
+            <ul>
+                <li>Go to running terminal ( terminal is navigated to development theme folder and  running <code>gulp</code> command to watch the file changes )</li>
+                <li>Press <strong>Ctrl + C</strong> or <strong>Cmd + C</strong> in your keyboard to end the running task.</li>
+                <li>After ending running task enter this command, <code>gulp build</code>. This command will build the production ready ( live site ready ) theme package within a folder named "build".</li>
+                <li>After doing the <code>gulp build</code> if you need you can configure the theme options ( such as disqus shortname, social links etc ) then use this command <code>gulp zip</code>. It will make a folder named "dist" and make a zip of the contents of "build" folder within "dist" folder.</li>
+                <li>Now you can upload this newly created zip in your ghost admin panel.</li>
+            </ul>
+
+
+            <!-- changelog -->
+            <h2 id="changelog">Changelog</h2>
+            <h3>V 2.0.0 - 11th November, 2019</h3>
+			<ul>
+				<li>Replaced deprecated {{code}} helper with {{statusCode}} helper.</li>
+				<li>Updated API uses to v3.</li>
+				<li>Updated search functionality to use API v3.</li>
+				<li>Added new Membership feature.</li>
+				<li>Modified Subscribsion widget to use new members feature.</li>
+				<li>Added new custom pages Account, susccribe, Sign in pages.</li>
+				<li>Custom Call to action for membership and paid membership in single post.</li>
+				<li>Added exta translation.</li>
+				<li>Removed unused ghostHunter js plugin.</li>
+			</ul>
+            <h3>V 1.4.1 - 4th October, 2019</h3>
+			<ul>
+				<li>Improved the Bookmark card style in desktop and mobile view.</li>
+			</ul>
+            <h2 id="changelog">Changelog</h2>
+            <h3>V 1.4.0 - 18th September, 2019</h3>
+			<ul>
+				<li>Added supporting css for new bookmark card.</li>
+			</ul>
+            <h3>V 1.3.0 - 24th May, 2019</h3>
+			<ul>
+				<li>Replaced @blog to @site and {{lang}} to {{@site.lang}}.</li>
+			</ul>
+            <h3>V 1.2.1 - 24th January, 2019</h3>
+			<ul>
+				<li>Fixed Small image in post content aligned left. Now it's aligned center.</li>
+			</ul>
+            <h3>V 1.2.0 - 21st January, 2019</h3>
+			<ul>
+				<li>Fixed Search functionality breaks after releasing API V2. Now We need to set an API key ( please see the "API key for search function" in the documentation ).</li>
+			</ul>
+            <h3>V 1.1.0 - 18th January, 2019</h3>
+			<ul>
+				<li>Theme now supports and uses Ghost content API version 2</li>
+				<li>Added missing google font css file.</li>
+			</ul>
+            <h3>V 1.0.1 - 16th January, 2019</h3>
+			<ul>
+				<li>Fixed share links</li>
+				<li>Fixed image logo maximum width CSS</li>
+			</ul>
+			<h3>V 1.0.0 - 10th December, 2018</h3>
+			<ul>
+				<li>Initial release</li>
+			</ul>
+
+			<!-- start Sources and Credits -->
+			<hr>
+			<h2>Source and Credits</h2>
+			The fonts, scripts, images or other files used in this theme are listed below.
+			<h3 id="font">Font</h3>
+			<ul>
+                <li><a href="https://fonts.google.com/specimen/Poppins" target="_blank">Montserrat</a></li>
+            </ul>
+            <h3 id="icons">Icons</h3>
+            <ul>
+                <li><a href="https://iconmonstr.com/">iconmonstr</a></li>
+            </ul>
+			<h3 id="scripts">Scripts</h3>
+			<ul>
+                <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap 4</a></li>
+                <li><a href="http://fitvidsjs.com/" target="_blank">Fitvids</a></li>
+                <li><a href="https://highlightjs.org/" target="_blank">Highlight js</a></li>
+                <li><a href="http://fusejs.io/" target="_blank">Fuse Js</a></li>
+                <li><a href="https://github.com/francoischalifour/medium-zoom" target="_blank">Medium zoom</a></li>
+            </ul>
+			<h3 id="images">Images</h3>
+			<ul>
+                <li>Preview Images form <a href="https://unsplash.com/" target="_blank">unsplash.com</a></li>
+            </ul>
+			<!-- end Sources and Credits -->
+		</div>
+	</div>
+</section>
+<section class="vibrant">
+	<div class="container">
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+
+<p class="signature">Happy Blogging<br>
+Best Regards<br>
+Biswajit Saha<br>
+</p>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<p> &copy; 2018 -2019 GBJ solution - All Rights Reserved</p>
+	</div>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script src="assets/js/layout.js"></script>
+ <script src="assets/js/jquery.localscroll.min.js" type="text/javascript"></script>
+ <script src="assets/js/jquery.scrollTo.min.js" type="text/javascript"></script>
+</body>
+</html>
