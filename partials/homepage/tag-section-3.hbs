@@ -17,7 +17,20 @@
                 </div>
             </a>
         </div>
-        
+        {{else}}
+        <div class="large-post">
+            {{#if feature_image}}
+            <a href="{{url}}">
+                <div class="featured-image-wrap">
+                    <div class="featured-image" style="background-image:url({{feature_image}});"></div>
+                </div>
+            </a>
+            {{/if}}
+            <div class="content-wrap{{^if feature_image}} no-image{{/if}}">
+                <h2 class="title h5"><a href="{{url}}">{{title}}</a></h2>
+                <time class="date" datetime="{{date format="YYYY-MM-DD"}}" title="{{date format="DD MMMM, YYYY"}}">{{date format="MMMM DD, YYYY"}}</time>
+            </div>
+        </div>
         {{/if}}
         {{/foreach}}
     </div>
