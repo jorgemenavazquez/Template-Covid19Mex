@@ -1,6 +1,7 @@
 <div class="widget">
     <h4 class="widget-title">{{t "Tags"}}</h4>
     <div class="content tagcloud">
-        {{#get "Public tags" limit="all" order="name asc"}}{{tags separator=" "}}{{/get}}
+        {{#get "buenapractica" limit="all" order="name asc"}}{{tags separator=" "}}{{/get}}
+        {{#get "consejos" limit="all" order="name asc"}}{{tags separator=" "}}{{/get}}
     </div>
 </div>
