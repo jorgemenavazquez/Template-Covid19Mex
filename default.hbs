@@ -20,12 +20,7 @@
 		{{{body}}}
 		{{! insert footer partial}}
 		{{> footer}}
-		{{#if @labs.members}}
-		{{> members/notifications}}
-		{{/if}}
-		{{! scripts}}
-		<script>var searchApi = "{{@site.url}}/ghost/api/v3/content/posts/?key={{>api_key}}&limit=all&fields=id,title,excerpt,custom_excerpt,url,published_at&formats=plaintext";</script>
-		<script src="{{asset "js/app.bundle.min.js"}}"></script>
+		
         {{ghost_foot}}
 	</body>
 </html>
