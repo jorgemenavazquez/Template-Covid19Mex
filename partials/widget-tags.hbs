@@ -1,24 +1,6 @@
 <div class="widget">
     <h4 class="widget-title">{{t "Tags"}}</h4>
     <div class="content tagcloud">
-       <a href="https://www.covid19mex.net/tag/consejos/">
-       <p>Consejos</p>       
-       </a>
-       <a href="https://www.covid19mex.net/tag/estadisticas/">
-       <p>Estadísticas</p>       
-       </a>
-       <a href="https://www.covid19mex.net/tag/buenapractica/">
-       <p>Buenaspracticas</p>       
-       </a>
-       <a href="https://www.covid19mex.net/tag/economia/">
-       <p>Economia</p>       
-       </a>
-       <a href="https://www.covid19mex.net/tag/hash-amlo/">
-       <p>#AMLO</p>       
-       </a>
-       <a href="https://www.covid19mex.net/tag/hash-lopezgatell-2/">
-       <p>#lopezgatell</p>       
-       </a>
-       
+       {{#get "tags" limit="public" order="name asc"}}{{tags separator=" "}}{{/get}}
     </div>
 </div>
