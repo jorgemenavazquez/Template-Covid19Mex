@@ -653,13 +653,4 @@ navigation bar
     max-width: 1230px;
   }
 }
-#aviso{
-		margin: 0 auto;
-		top: 85%;
-		position: fixed;
-		width: 100%;
-		padding: 30px 10px 30px 10px;
-		background: #00bdff;
-		color: white;
-		text-align: center;
-	}
+
