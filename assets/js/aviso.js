@@ -6,12 +6,10 @@ $('#aviso').hide(0);
 
 
 				var windowHeight = $(window).scrollTop();
-				var contenido2 = $("#contenido2").offset();
-
-				contenido2 = contenido2.top;
+				
 
 
-				if(windowHeight = contenido2  ){
+				if(windowHeight = 200  ){
 					
 
 					$('#aviso').fadeIn(500);
