@@ -9,7 +9,7 @@ $('#aviso').hide(0);
 				
 
 
-				if(windowHeight = 200  ){
+				if(windowHeight = 1000  ){
 					
 
 					$('#aviso').fadeIn(500);
