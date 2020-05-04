@@ -29,17 +29,19 @@
 
      
 <div class="main-content-area">
- <div id="contenido2">  
+ 
  
     {{> homepage/featured-section}}
-      </div>
+      
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
                 <div class="latest-post-section post-group">
-                    <div class="post-group-title">
+                    <div id="contenido2">  
+		    <div class="post-group-title">
                         <span>{{t "Ultimas Noticias"}}</span>
                     </div>
+		    </div>
                     {{#foreach posts visibility="all"}}
                     {{#if @first}}
                     <div class="large-post clearfix">
