@@ -1,33 +1,5 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
-<div class="aviso" id="aviso">
-        <div class="textos">
-            
-            <h2>Covid19Mexico</h2>    
-            <p>
-           
-            Covid19mex.net es un periódico digital independiente que provee de manera gratuita 
-            noticias sobre la pandemia provocada por el virus COVID-19. 
-            Pero necesitamos tu ayuda, para mantenernos hablando con la verdad. 
-            Considera donar, cualquier cantidad hace la diferencia.
-            O subscribete y recibe los beneficios de la membresía.
-            </p>
-
-        </div>
-        
-        <div class="cerrar">
-	 
-               <span onclick="cerraranuncio('aviso')">{{> icons/close}}</span>
-        </div>
-
-        <div class="botones">            
-            <button class="button button2">Donar</button>
-            <button class="button button2">Subscribirse</button>     
-        </div>
-        
-    </div>			
-
-     
 <div class="main-content-area">
  
  
@@ -37,11 +9,11 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="latest-post-section post-group">
-                    <div id="contenido2">  
+                   
 		    <div class="post-group-title">
                         <span>{{t "Ultimas Noticias"}}</span>
                     </div>
-		    </div>
+		  
                     {{#foreach posts visibility="all"}}
                     {{#if @first}}
                     <div class="large-post clearfix">
