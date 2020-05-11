@@ -21,6 +21,9 @@
             <div class="post-content m-auto">
                 {{#if access}}
                 {{content}}
+                <div class="post-head d-flex{{#if feature_image}} has-image{{/if}}" {{#if feature_image}}style="background-image:url({{ feature_image}});"{{/if}}>
+                
+                </div>
                 {{else}}
                 <div class="excerpt-single-post">
                     {{excerpt}}
