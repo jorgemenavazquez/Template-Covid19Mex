@@ -3,10 +3,10 @@
 {{/foreach}}
 {{#if @labs.members}}
 {{#if @member}}
-<li><a class="menu-btn" href="/account.hbs/">{{t "Cuenta"}}</a></li>
-<li><a href="signout.hbs" data-members-signout>{{t "Salir"}}</a></li>
+<li><a class="menu-btn" href="/account/">{{t "Cuenta"}}</a></li>
+<li><a href="#signout" data-members-signout>{{t "Salir"}}</a></li>
 {{else}}
-<li><a href="#signin">{{t "Ingresar"}}</a></li>
+<li><a href="/signin/">{{t "Ingresar"}}</a></li>
 <li><a class="menu-btn" href="/signup/">{{t "Regístrate"}}</a></li>
 {{/if}}
 {{/if}}
