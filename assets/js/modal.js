@@ -1,4 +1,4 @@
 $(document).ready(function() {
-    $("#myModal").modal();
-
+    
+    document.getElementById('id01').style.display='block'
 });
