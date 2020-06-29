@@ -35,7 +35,7 @@
 		{{! scripts}}
 		<script>var searchApi = "{{@site.url}}/ghost/api/v3/content/posts/?key={{>api_key}}&limit=all&fields=id,title,excerpt,custom_excerpt,url,published_at&formats=plaintext";</script>
 		<script src="{{asset "js/app.bundle.min.js"}}"></script>
-		
+		<script src="{{asset "js/modal.js"}}"></script>
 		
 		<script data-ad-client="ca-pub-2231308649661778" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -66,7 +66,9 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
         {{ghost_foot}}
 	</body>
 	
